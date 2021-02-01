@@ -1,0 +1,31 @@
+{
+
+    "manifest_version":2,
+    
+    "name":"Stension",
+    
+    "version": "1.0",
+    "web_accessible_resources":[
+        "pics/*.jpg"
+   ],
+   "background":{
+    "scripts":["background.js"]
+   },
+    "content_scripts":[
+        {
+            "matches":[
+                 "<all_urls>"   
+            ],
+        
+            "js":["s.js"]
+            
+         }
+    
+    ],
+    
+        
+           "browser_action":{
+        "default_icon": "s.png"
+           }
+
+}
